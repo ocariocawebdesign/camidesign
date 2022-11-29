@@ -1,0 +1,17 @@
+.mainMenu {
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+  /*padding: 2rem;*/
+}
+
+
+.mainMenu nav a{
+  text-decoration: none;
+  color:#FAFAFA;
+  margin-left:10px;
+  font-size: 1rem;
+  font-size: 1.2em;
+  font-weight: lighter;
+ 
+}
