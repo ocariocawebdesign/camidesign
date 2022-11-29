@@ -18,19 +18,23 @@ export function About() {
       <br />
 
       <div className="row">
-        <AboutH1
+        <AboutH1 className="animate__animated animate__fadeInLeft"
           style={{
             width: "100%",
             background: "#333",
             textAlign: "left",
             fontSize: "4.2em",
             color: "#FAFAFA",
-            borderRadius:"3px",
-            padding:"1rem"
-           
+            borderRadius: "3px",
+            padding: "1rem",
+            animation:'fadeInLeft',
+            animationDuration: '15s',
+            animateDelay: '10s'
+
+            
           }}
         >
-          $some clients />
+          some clients />
         </AboutH1>
         <div className="col-md-3 col-lg-3 mb-4">
           <HeroH1
