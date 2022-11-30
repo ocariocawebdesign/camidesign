@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Header from "../src/components/Header/Index";
 import Footer from "../src/components/Footer/Index";
+import "animate.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { HeroContent } from "./components/HeroContent/Index";
@@ -13,7 +15,7 @@ function App() {
     <>
       <Header />
       <HeroContent />
-      <About/>
+      <About />
       <Footer />
     </>
   );

@@ -9,17 +9,27 @@ export const HeroH1 = styled.h1`
   margin-top: 4rem;
   line-height: 1.2;
   letter-spacing: -0.06em;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   border-radius: 3px;
   padding: 0.5rem;
+  transition: 0.6s;
+  cursor: pointer;
+  
+
+  &:hover {
+    filter: brightness(1.75);
+    transform: scale(1.03);
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    color:#000;
+  }
 
   p {
     font-size: 14px;
-   
+
     line-height: 1.2;
-    letter-spacing:0.1em;
+    letter-spacing: 0.1em;
 
     font-weight: 400;
-
   }
 `;

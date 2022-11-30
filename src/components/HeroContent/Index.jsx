@@ -3,7 +3,6 @@ import Logo from "../../assets/img/logo.png";
 import DesignerAvatar from "../../assets/img/cynthia.png";
 import DesignerAvatar2 from "../../assets/img/carlos.png";
 //import VsCode from "../../assets/img/vscode.png";
-import "animate.css";
 
 export function HeroContent() {
   return (

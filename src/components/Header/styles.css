@@ -1,3 +1,8 @@
+header {
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 8s; /* don't forget to set a duration! */
+}
+
 .mainMenu {
   display: flex;
   justify-content: right;
@@ -5,12 +10,10 @@
   /*padding: 2rem;*/
 }
 
-
-.mainMenu nav a{
+.mainMenu nav a {
   text-decoration: none;
-  color:#FAFAFA;
-  margin-left:10px;
+  color: #fafafa;
+  margin-left: 10px;
   font-size: 1.1em;
   font-weight: lighter;
- 
 }

@@ -1,8 +1,8 @@
 import { AboutH1 } from "./styles";
 import { HeroH1 } from "../HeroContent/styles";
-import LogoSreo from "../../assets/img/logoSREO.png";
-import LogoOndas from "../../assets/img/logoOndas.png";
-import LogoFabiola from "../../assets/img/fabiolaLogo.png";
+//import LogoSreo from "../../assets/img/logoSREO.png";
+//import LogoOndas from "../../assets/img/logoOndas.png";
+//import LogoFabiola from "../../assets/img/fabiolaLogo.png";
 import Linix from "../../assets/videos/linix.mp4";
 
 export function About() {
@@ -17,16 +17,18 @@ export function About() {
         </p>
       </AboutH1>
       <br />
+      <hr style={{}} />
+      <br />
 
       <div className="row">
         <AboutH1
           className="animate__animated animate__fadeInLeft"
           style={{
             width: "100%",
-            background: "#333",
-            textAlign: "left",
-            fontSize: "4.2em",
-            color: "#FAFAFA",
+            background: "#FFF",
+            textAlign: "center",
+            fontSize: "6.2rem",
+            color: "#333",
             borderRadius: "3px",
             padding: "1rem",
             animation: "fadeInLeft",
@@ -34,7 +36,8 @@ export function About() {
             animateDelay: "10s",
           }}
         >
-          some clients />
+          some clients
+          <br />
         </AboutH1>
         <div className="col-md-3 col-lg-3 mb-4">
           <HeroH1
@@ -115,7 +118,7 @@ export function About() {
             style={{
               marginTop: "2rem",
               height: "220px",
-             // padding: "1rem",
+              // padding: "1rem",
               margin: "0 auto",
               border: "none",
             }}
