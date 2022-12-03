@@ -1,6 +1,6 @@
-//import MainMenu from "../MainMenu/Index";
 import Logo from "../../assets/img/logo.png";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -39,12 +39,11 @@ export default function Header() {
             <div className="col-md-6 col-lg-6" style={{ padding: "3rem" }}>
               <div className="mainMenu">
                 <nav>
-                  <a href="#">about</a>
-                  <a href="#">book</a>
-                  <a href="#">portfolio</a>
+                  <Link to="/">Home</Link>
+                  <Link to="/cynthia-rocumback">Cynthia Rocumback</Link>
+                  <Link to="/carlos-abreu">Carlos Abreu</Link>
                   <a href="#">blog</a>
                   <a href="#">contact</a>
-
                   <a href="#">Twitter</a>
                   <a href="#">LinkedIn</a>
                   <a href="#">Instagram</a>
@@ -53,7 +52,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-        {/*<MainMenu />*/}
       </header>
     </>
   );

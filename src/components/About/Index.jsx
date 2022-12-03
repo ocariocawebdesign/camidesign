@@ -133,6 +133,7 @@ export function About() {
           </HeroH1>
         </div>
       </div>
+      <Profiles />
     </div>
   );
 }

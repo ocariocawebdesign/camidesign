@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router";
 import Header from "../src/components/Header/Index";
 import Footer from "../src/components/Footer/Index";
 import "animate.css";
@@ -9,14 +10,13 @@ import { HeroContent } from "./components/HeroContent/Index";
 import { About } from "./components/About/Index";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Header />
-      <HeroContent />
-      <About />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Router />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

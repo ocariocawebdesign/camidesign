@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled.div`
   font-size: 3rem;
   color: #333333;
   opacity: 1;
@@ -14,14 +14,14 @@ export const HeroH1 = styled.h1`
   padding: 0.5rem;
   transition: 0.6s;
   cursor: pointer;
-  
+  text-decoration: none !important;
 
   &:hover {
     filter: brightness(1.75);
     transform: scale(1.03);
     border: 1px solid #e3e3e3;
     border-radius: 3px;
-    color:#000;
+    color: #000;
   }
 
   p {
@@ -31,5 +31,10 @@ export const HeroH1 = styled.h1`
     letter-spacing: 0.1em;
 
     font-weight: 400;
+  }
+
+  a {
+    color: #333333;
+    text-decoration: none;
   }
 `;

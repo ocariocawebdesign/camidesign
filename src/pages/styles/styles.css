@@ -1,0 +1,25 @@
+.btn-primary-mod-02 {
+  width: 20%;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  background: #b85425 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 2rem;
+  color: #fff !important;
+  -webkit-box-shadow: 7px 3px 30px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 3px 30px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 3px 30px -4px rgba(0, 0, 0, 0.75);
+}
+
+.btn-primary-mod-02:hover {
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  background: rgb(90, 89, 89) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  color: #fafafa !important;
+  -webkit-box-shadow: 7px 3px 30px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 3px 30px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 3px 30px -4px rgba(0, 0, 0, 0.75);
+}
