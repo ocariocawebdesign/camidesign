@@ -8,12 +8,12 @@ export const DivProfile = styled.div`
   text-align: left;
   margin-top: 4rem;
   line-height: 1.2;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.01em;
   /*border: 1px solid #e3e3e3;
   border-radius: 3px;*/
-  padding: 0.5rem;
+  /*padding: 0.5rem;
   transition: 0.6s;
-  cursor: pointer;
+  //cursor: pointer;
   text-decoration: none;
   /*height: 100vh;*/
   width: 100%;
@@ -21,7 +21,7 @@ export const DivProfile = styled.div`
   p {
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.1em;
+    letter-spacing: 0em;
     font-weight: 400;
   }
 

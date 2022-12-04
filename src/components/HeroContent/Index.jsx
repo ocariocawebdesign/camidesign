@@ -4,17 +4,20 @@ import DesignerAvatar from "../../assets/img/cynthia.png";
 import DesignerAvatar2 from "../../assets/img/carlos.png";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { About } from "../About/Index";
 
 export function HeroContent() {
   const [users, setUsers] = useState([{}]);
   const profile = [
     {
+      id: "1",
       name: "Cynthia Rockumback",
       description: "Motion Designer and Frontend Websites",
       imgProfile: "Foto",
     },
     [
       {
+        id: "2",
         name: "Carlos Abreu",
         description: "Motion Designer and Frontend Websites",
         imgProfile: "src/img/carlos",
@@ -25,12 +28,11 @@ export function HeroContent() {
   useEffect(() => {
     setUsers(profile);
   }, []); //empty array as second argument.
-  console.log(users[0].id);
 
   return (
     <>
       <h1></h1>
-      <div className="container">
+      <div className="container mb-4">
         <div className="row">
           <div
             style={{
@@ -44,7 +46,7 @@ export function HeroContent() {
               <Link to="/cynthia-rocumback">
                 motion designer
                 <p>
-                  <strong></strong> <br />
+                  <strong>Cynthia Rocumback</strong> <br />
                   <span style={{ color: "#979595" }}>
                     Product designer specialising in UI design and design
                     systems.
@@ -56,8 +58,13 @@ export function HeroContent() {
             <br />
             <img className="img-fluid" src={DesignerAvatar} />
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-4 animate__animated animate__rotateIn">
-            <img className="img-fluid" src={Logo} alt="" />
+          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4  animate__animated animate__rotateIn">
+            <img
+              className="img-fluid"
+              style={{ marginTop: "5rem" }}
+              src={Logo}
+              alt=""
+            />
           </div>
           <div
             style={{
@@ -71,7 +78,7 @@ export function HeroContent() {
               <Link to="/carlos-abreu">
                 frontend dev
                 <p>
-                  <strong></strong> <br />
+                  <strong>Carlos Abreu</strong> <br />
                   <span style={{ color: "#979595" }}>
                     Front end developer who writes clean, elegant and efficient
                     code.
@@ -83,9 +90,7 @@ export function HeroContent() {
             <img className="img-fluid" src={DesignerAvatar2} />
           </div>
         </div>
-        <br />
-        <hr />
-        <br />
+        <About />
       </div>
     </>
   );

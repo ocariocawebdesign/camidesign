@@ -1,11 +1,11 @@
-import { MainBox } from "./style";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import parse from "html-react-parser";
+//import { MainBox } from "../components/BlogPosts/style";
 
 const url = "https://threeeyes.online/ctrenascer/wp-json/wp/v2/posts/";
 
-export default function Content() {
+export default function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -22,13 +22,11 @@ export default function Content() {
           <>
             <div key={dados.id}>
               <div className="container">
-                <MainBox>
-                  <div className="box-content">
-                    <h1>{dados.title.rendered}</h1>
-                    <p className="">{parse(`${dados.content.rendered}`)}</p>
-                    <p>Data:{dados.date}</p>
-                  </div>
-                </MainBox>
+                <div className="box-content">
+                  <h1>{dados.title.rendered}</h1>
+                  <p className="">{parse(`${dados.content.rendered}`)}</p>
+                  <p>Data:{dados.date}</p>
+                </div>
               </div>
             </div>
           </>

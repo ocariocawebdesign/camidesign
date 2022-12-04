@@ -12,9 +12,9 @@ export default function Header() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-6">
-              <a href="#">
+              <Link to="/">
                 <img className="logo" src={Logo} width="40" height="40" />
-              </a>
+              </Link>
               <h1
                 style={{
                   color: "#FAFAFA",
@@ -42,11 +42,11 @@ export default function Header() {
                   <Link to="/">Home</Link>
                   <Link to="/cynthia-rocumback">Cynthia Rocumback</Link>
                   <Link to="/carlos-abreu">Carlos Abreu</Link>
-                  <a href="#">blog</a>
-                  <a href="#">contact</a>
-                  <a href="#">Twitter</a>
+                  <Link to="/news">News</Link>
+
+                  {/*9<a href="#">Twitter</a>
                   <a href="#">LinkedIn</a>
-                  <a href="#">Instagram</a>
+              <a href="#">Instagram</a>-*/}
                 </nav>
               </div>
             </div>

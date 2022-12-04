@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutH1 = styled.h1`
-  font-size: 6.2rem;
+  font-size: 5rem;
   color: #333333;
   opacity: 1;
   font-weight: bolder;
