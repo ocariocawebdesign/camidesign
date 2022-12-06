@@ -5,33 +5,21 @@ import DesignerAvatar2 from "../../assets/img/carlos.png";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { About } from "../About/Index";
+//import { Loader } from "../Loader";
 
 export function HeroContent() {
-  const [users, setUsers] = useState([{}]);
-  const profile = [
-    {
-      id: "1",
-      name: "Cynthia Rockumback",
-      description: "Motion Designer and Frontend Websites",
-      imgProfile: "Foto",
-    },
-    [
-      {
-        id: "2",
-        name: "Carlos Abreu",
-        description: "Motion Designer and Frontend Websites",
-        imgProfile: "src/img/carlos",
-      },
-    ],
-  ];
 
+  
+  
   useEffect(() => {
-    setUsers(profile);
+    //Dados carregados, esconta o loader
+  
   }, []); //empty array as second argument.
 
   return (
     <>
       <h1></h1>
+   
       <div className="container mb-4">
         <div className="row">
           <div
