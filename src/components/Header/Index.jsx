@@ -1,4 +1,4 @@
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/Logo_Cami_Studio.png";
 import "./styles.css";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ export default function Header() {
           <div className="row">
             <div className="col-md-6 col-lg-6">
               <Link to="/">
-                <img className="logo" src={Logo} width="40" height="40" />
+                <img className="logo img-fluid" src={Logo}  />
               </Link>
               <h1
                 style={{
@@ -22,7 +22,7 @@ export default function Header() {
                   fontSize: "1.5em",
                 }}
               >
-                CAMI DESIGN
+               
               </h1>
 
               <small
@@ -33,16 +33,16 @@ export default function Header() {
                   marginLeft: "0",
                 }}
               >
-                Motion Designer and Frontend Websites
+               
               </small>
             </div>
             <div className="col-md-6 col-lg-6" style={{ padding: "3rem" }}>
               <div className="mainMenu">
                 <nav>
-                  <Link to="/">Home</Link>
+                  {/*<Link to="/">Home</Link>*
                   <Link to="/cynthia-rocumback">Cynthia Rocumback</Link>
                   <Link to="/carlos-abreu">Carlos Abreu</Link>
-                  <Link to="/news">News</Link>
+              <Link to="/news">News</Link>*/}
 
                   {/*9<a href="#">Twitter</a>
                   <a href="#">LinkedIn</a>
