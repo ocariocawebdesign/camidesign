@@ -57,31 +57,18 @@ export function CynthiaRocumback() {
               </p>
             </DivProfile>
             <div className="">
-                <a
-                  href="https://api.whatsapp.com/send?phone=5521994127177&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Desenvolvimento%20de%20animações..."
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="btn btn-primary-mod-02 text-button-size swing">
-                    Contact
-                  </button>
-                </a>
-              </div>
+              <a
+                href="https://api.whatsapp.com/send?phone=5521994127177&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Desenvolvimento%20de%20animações..."
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="btn btn-primary-mod-02 text-button-size swing">
+                  Contact
+                </button>
+              </a>
+            </div>
           </div>
-          <div className="col-md-6 col-lg-6">
-            <DivProfile>
-              <iframe
-                style={{ border: "5px #000 solid", borderRadius: "5px" }}
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/Fga25XWQu0Y"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </DivProfile>
-          </div>
+          <div className="col-md-6 col-lg-6"></div>
           <br />
 
           <div className="col-md-2 col-lg-2"></div>
