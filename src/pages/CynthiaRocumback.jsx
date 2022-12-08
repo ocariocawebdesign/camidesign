@@ -1,10 +1,10 @@
 import { DivProfile } from "./styles/styles";
 import "./styles/styles.css";
 
-import CynthiaImg1 from "../assets/img/cynthia2.jpg";
-import CynthiaImg2 from "../assets/img/cynthia3.jpg";
-import CynthiaImg3 from "../assets/img/cynthia4.jpg";
-import CynthiaImg4 from "../assets/img/cynthia5.jpg";
+import CynthiaVideo1 from "../assets/videos/linix.mp4";
+import CynthiaVideo2 from "../assets/videos/salesforce.mp4";
+import CynthiaVideo3 from "../assets/videos/sequoia.mp4";
+import CynthiaVideo4 from "../assets/videos/swissport.mp4";
 
 export function CynthiaRocumback() {
   return (
@@ -75,19 +75,32 @@ export function CynthiaRocumback() {
         </div>
       </div>
 
-      <div className="container mt-4 mb-4">
+      <div className="container mb-4">
         <div className="row">
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CynthiaImg1} />
+            <video width="280" height="240" controls>
+              <source src={CynthiaVideo1} type="video/mp4" />
+            </video>
           </div>
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CynthiaImg2} />
+            <video
+              width="280"
+              height="240"
+              controls
+              style={{ marginRight: "12px" }}
+            >
+              <source src={CynthiaVideo2} type="video/mp4" />
+            </video>
           </div>
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CynthiaImg3} />
+            <video width="280" height="240" controls>
+              <source src={CynthiaVideo3} type="video/mp4" />
+            </video>
           </div>
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CynthiaImg4} />
+            <video width="280" height="240" controls>
+              <source src={CynthiaVideo4} type="video/mp4" />
+            </video>
           </div>
           <div className="col-md-2 col-lg-2"></div>
           <div className="col-md-2 col-lg-2"></div>
