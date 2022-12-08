@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import parse from "html-react-parser";
+import { BlogPosts } from "./index";
 //import { MainBox } from "../components/BlogPosts/style";
 
-const url = "https://threeeyes.online/ctrenascer/wp-json/wp/v2/posts/";
+const url = "https://threeeyes.online/cami/wp-json/wp/v2/posts/";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -20,15 +21,13 @@ export default function Blog() {
       {posts.map((dados) => {
         return (
           <>
-            <div key={dados.id}>
-              <div className="container">
-                <div className="box-content">
-                  <h1>{dados.title.rendered}</h1>
-                  <p className="">{parse(`${dados.content.rendered}`)}</p>
-                  <p>Data:{dados.date}</p>
-                </div>
+            <BlogPosts>
+              <div key={dados.id}>
+                <h1>{dados.title.rendered}</h1>
+                <p className="">{parse(`${dados.content.rendered}`)}</p>
+                <p>Data:{dados.date}</p>
               </div>
-            </div>
+            </BlogPosts>
           </>
         );
       })}

@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <header
-        className="animate__animated animate__fadeIn"
+        className=""
         style={{ background: "#000000e4", padding: "1rem", height: "160px" }}
       >
         <div className="container">

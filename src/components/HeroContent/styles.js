@@ -17,20 +17,18 @@ export const HeroH1 = styled.div`
   text-decoration: none !important;
 
   &:hover {
-    filter: brightness(1.75);
-    transform: scale(1.03);
-    /*border: 1px solid #e3e3e3;
-    border-radius: 3px;*/
-    color: #000;
+    //border: 1px solid #e3e3e3;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    opacity: 0.8;
   }
 
   p {
     font-size: 14px;
-
-    line-height: 1.2;
     letter-spacing: 0.1em;
-
     font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
   }
 
   a {

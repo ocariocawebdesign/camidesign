@@ -8,27 +8,23 @@ import { About } from "../About/Index";
 //import { Loader } from "../Loader";
 
 export function HeroContent() {
-
-  
-  
   useEffect(() => {
     //Dados carregados, esconta o loader
-  
   }, []); //empty array as second argument.
 
   return (
     <>
       <h1></h1>
-   
+
       <div className="container mb-4">
         <div className="row">
           <div
             style={{
-              animation: "fadeInLeft",
+              animation: "fadeIn",
               animationDuration: "2s",
               animateDelay: "8s",
             }}
-            className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeInLeft"
+            className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
               <Link to="/cynthia-rocumback">
@@ -46,21 +42,20 @@ export function HeroContent() {
             <br />
             <img className="img-fluid" src={DesignerAvatar} />
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4  animate__animated animate__rotateIn">
-            <img
-              className="img-fluid"
-              style={{ marginTop: "5rem" }}
-              src={Logo}
-              alt=""
-            />
+          <div
+            className="col-xs-12 col-sm-12 col-md-4 col-lg-4  animate__animated animate__fadeIn"
+            style={{ display: "flex", justifyContent: "center", maxWidth:'100%'}}
+          >
+            {/*Depois remover marginTop no mobile da logo */}
+            <img className="camiLogo" style={{width:'220px', height:'220px', marginTop:'300px'}} src={Logo} alt="" />
           </div>
           <div
             style={{
-              animation: "fadeInRight",
+              animation: "fadeIn",
               animationDuration: "2s",
               animateDelay: "8s",
             }}
-            className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeInRight"
+            className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
               <Link to="/carlos-abreu">

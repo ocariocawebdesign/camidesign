@@ -25,9 +25,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.5252401"
-     inkscape:cx="650.17884"
-     inkscape:cy="-116.13736"
+     inkscape:zoom="1.0504802"
+     inkscape:cx="495.48768"
+     inkscape:cy="20.942803"
      inkscape:window-width="1311"
      inkscape:window-height="744"
      inkscape:window-x="55"
@@ -273,81 +273,68 @@
     </linearGradient>
   </defs>
   <g
-     id="g1305">
+     id="g1087">
     <g
-       id="g423"
+       id="Layer_7_copy"
+       data-name="Layer 7 copy"
+       transform="matrix(0.37683574,0,0,0.37683574,10.260235,29.856293)">
+      <path
+         class="cls-5"
+         d="m 157.33,366.94 c 18.46,18.45 48.38,18.45 66.83,0 v 0 c 18.45,-18.45 18.45,-48.37 0,-66.82 L 81.06,157.01 c -18.46,-18.45 -48.38,-18.46 -66.83,0 v 0 c -18.46,18.45 -18.45,48.38 0,66.83 l 84.65,84.44 58.44,58.65 z"
+         id="path87"
+         style="fill:url(#linear-gradient-3)" />
+    </g>
+    <g
+       id="g411"
        transform="matrix(0.37683574,0,0,0.37683574,10.260235,29.856293)">
       <g
-         id="Layer_7_copy"
-         data-name="Layer 7 copy">
-        <path
-           class="cls-5"
-           d="m 157.33,366.94 c 18.46,18.45 48.38,18.45 66.83,0 v 0 c 18.45,-18.45 18.45,-48.37 0,-66.82 L 81.06,157.01 c -18.46,-18.45 -48.38,-18.46 -66.83,0 v 0 c -18.46,18.45 -18.45,48.38 0,66.83 l 84.65,84.44 58.44,58.65 z"
-           id="path87"
-           style="fill:url(#linear-gradient-3)" />
+         id="Layer_9_copy"
+         data-name="Layer 9 copy">
+        <rect
+           class="cls-2"
+           x="141.35001"
+           y="139.10001"
+           width="102.57"
+           height="102.57"
+           transform="rotate(45,192.63174,190.38068)"
+           id="rect82"
+           style="fill:url(#linear-gradient)" />
       </g>
+      <polygon
+         class="cls-1"
+         points="192.63,256.89 192.63,123.89 259.76,191.02 "
+         id="polygon85"
+         style="fill:url(#linear-gradient-2)" />
+      <path
+         class="cls-6"
+         d="m 224.16,13.84 c -18.46,-18.45 -48.37,-18.45 -66.83,0 L 14.24,156.93 C -3.83,175 -4.96,203.28 12.35,221.8 l 0.73,0.78 0.95,0.95 c 0.07,0.07 0.13,0.15 0.2,0.22 0.07,0.08 0.16,0.14 0.24,0.22 l 84.41,84.31 C 53.43,262.83 114.45,190.37 114.45,190.37 v 0 c 0,0 109.71,-109.71 109.71,-109.71 18.45,-18.45 18.45,-48.37 0,-66.82 z"
+         id="path90"
+         style="fill:url(#linear-gradient-4)" />
       <g
-         id="g411">
-        <g
-           id="Layer_9_copy"
-           data-name="Layer 9 copy">
-          <rect
-             class="cls-2"
-             x="141.35001"
-             y="139.10001"
-             width="102.57"
-             height="102.57"
-             transform="rotate(45,192.63174,190.38068)"
-             id="rect82"
-             style="fill:url(#linear-gradient)" />
-        </g>
-        <polygon
-           class="cls-1"
-           points="192.63,256.89 192.63,123.89 259.76,191.02 "
-           id="polygon85"
-           style="fill:url(#linear-gradient-2)" />
+         id="Layer_4_copy"
+         data-name="Layer 4 copy">
         <path
-           class="cls-6"
-           d="m 224.16,13.84 c -18.46,-18.45 -48.37,-18.45 -66.83,0 L 14.24,156.93 C -3.83,175 -4.96,203.28 12.35,221.8 l 0.73,0.78 0.95,0.95 c 0.07,0.07 0.13,0.15 0.2,0.22 0.07,0.08 0.16,0.14 0.24,0.22 l 84.41,84.31 C 53.43,262.83 114.45,190.37 114.45,190.37 v 0 c 0,0 109.71,-109.71 109.71,-109.71 18.45,-18.45 18.45,-48.37 0,-66.82 z"
-           id="path90"
-           style="fill:url(#linear-gradient-4)" />
-        <g
-           id="Layer_4_copy"
-           data-name="Layer 4 copy">
-          <path
-             class="cls-3"
-             d="m 227,367.14 c -18.46,18.47 -48.4,18.47 -66.86,0 v 0 c -18.46,-18.46 -18.46,-48.4 0,-66.86 L 303.31,157.1 c 18.46,-18.46 48.4,-18.47 66.86,0 v 0 c 18.47,18.46 18.46,48.4 0,66.87 L 285.48,308.45 227,367.13 Z"
-             id="path92"
-             style="fill:url(#radial-gradient)" />
-        </g>
-        <path
-           class="cls-4"
-           d="m 160.14,13.85 c 18.47,-18.47 48.4,-18.46 66.87,0 l 143.17,143.17 c 18.08,18.08 19.21,46.37 1.89,64.91 l -0.73,0.78 -0.95,0.95 c -0.07,0.07 -0.13,0.15 -0.2,0.22 -0.07,0.08 -0.16,0.14 -0.24,0.22 l -84.46,84.35 C 330.96,262.97 269.91,190.48 269.91,190.48 h 0.01 c 0,0 -109.78,-109.77 -109.78,-109.77 -18.46,-18.47 -18.46,-48.4 0,-66.86 z"
-           id="path95"
-           style="fill:url(#linear-gradient-5)" />
+           class="cls-3"
+           d="m 227,367.14 c -18.46,18.47 -48.4,18.47 -66.86,0 v 0 c -18.46,-18.46 -18.46,-48.4 0,-66.86 L 303.31,157.1 c 18.46,-18.46 48.4,-18.47 66.86,0 v 0 c 18.47,18.46 18.46,48.4 0,66.87 L 285.48,308.45 227,367.13 Z"
+           id="path92"
+           style="fill:url(#radial-gradient)" />
       </g>
+      <path
+         class="cls-4"
+         d="m 160.14,13.85 c 18.47,-18.47 48.4,-18.46 66.87,0 l 143.17,143.17 c 18.08,18.08 19.21,46.37 1.89,64.91 l -0.73,0.78 -0.95,0.95 c -0.07,0.07 -0.13,0.15 -0.2,0.22 -0.07,0.08 -0.16,0.14 -0.24,0.22 l -84.46,84.35 C 330.96,262.97 269.91,190.48 269.91,190.48 h 0.01 c 0,0 -109.78,-109.77 -109.78,-109.77 -18.46,-18.47 -18.46,-48.4 0,-66.86 z"
+         id="path95"
+         style="fill:url(#linear-gradient-5)" />
     </g>
     <text
        xml:space="preserve"
-       style="font-weight:800;font-size:97.1768px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';opacity:0.744134;fill:#333333;stroke:#202020;stroke-width:0"
-       x="164.8632"
-       y="137.56613"
+       style="font-weight:800;font-size:91.9056px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';opacity:1;fill:#ffffff;stroke:#202020;stroke-width:0"
+       x="181.72368"
+       y="135.72649"
        id="text899"><tspan
          sodipodi:role="line"
          id="tspan897"
-         x="164.8632"
-         y="137.56613"
+         x="181.72368"
+         y="135.72649"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Figtree;-inkscape-font-specification:'Figtree Bold';fill:#ffffff;stroke-width:0">CAMI STUDIO</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.0717px;font-family:Figtree;-inkscape-font-specification:'Figtree Bold';opacity:0.744134;fill:#333333;stroke:#202020;stroke-width:0"
-       x="441.07474"
-       y="168.21753"
-       id="text1132"><tspan
-         sodipodi:role="line"
-         id="tspan1130"
-         x="441.07474"
-         y="168.21753"
-         style="fill:#ffffff;stroke-width:0">Motion Designer and Frontend Websites</tspan></text>
   </g>
 </svg>

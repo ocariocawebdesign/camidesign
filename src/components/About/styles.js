@@ -14,7 +14,7 @@ export const AboutH1 = styled.h1`
 
   p {
     font-size: 15px;
-    text-align: left;
+    text-align: center;
     padding: 0.5rem;
     line-height: 1.2;
     letter-spacing: 0.1em;

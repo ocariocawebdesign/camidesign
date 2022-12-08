@@ -1,6 +1,6 @@
 header {
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 8s; /* don't forget to set a duration! */
+  /*animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+ /* animation-duration: 8s; /* don't forget to set a duration! */
 }
 
 .mainMenu {
@@ -12,7 +12,7 @@ header {
 
 .mainMenu nav a {
   text-decoration: none;
-  color: #fafafa;
+  color: #cfcbcbda;
   margin-left: 10px;
   font-size: 1.1em;
   font-weight: lighter;

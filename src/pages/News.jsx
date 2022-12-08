@@ -1,12 +1,9 @@
-import Blog from "../components/Blog/Index"
+import Blog from "../components/Blog/Index";
 
-export function News(){
-    
-    return(
-        <>
-        <h1>Novidades</h1>
-        <Blog/>
-        </>
-    )
-
+export function News() {
+  return (
+    <>
+      <Blog />
+    </>
+  );
 }
