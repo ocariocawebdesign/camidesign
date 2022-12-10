@@ -24,7 +24,7 @@ export function CarlosAbreu() {
                 <br />I am a user of the Ubuntu linux distribution that I am
                 passionate about.
               </p>
-              <div className="" style={{ marginTop: "-2rem" }}>
+              <div className="" style={{ marginTop: "-1rem" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -71,7 +71,7 @@ export function CarlosAbreu() {
           <div className="col-md-6 col-lg-6">
             
           </div>
-          <div className="">
+          <div className="mt-2">
             <a
               href="https://api.whatsapp.com/send?phone=5521967530653&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Desenvolvimento%20de%20sites..."
               target="_blank"

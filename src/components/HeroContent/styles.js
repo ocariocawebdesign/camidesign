@@ -18,9 +18,9 @@ export const HeroH1 = styled.div`
 
   &:hover {
     //border: 1px solid #e3e3e3;
-    background-color: #dbdbdb;
+    background-color: #fff; /*#dbdbdb;*/
     border-radius: 5px;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   p {
@@ -34,5 +34,62 @@ export const HeroH1 = styled.div`
   a {
     color: #333333;
     text-decoration: none;
+  }
+
+  .camiLogo {
+    width: 220px;
+    height: 220px;
+    margin-top: 50%;
+  }
+
+  .camiLogo:hover {
+  }
+
+  @media (width: 360px) and (height: 740px) {
+    .camiLogo {
+      margin-top: 0;
+    }
+  }
+
+  @media (width: 360px) and (height: 640px) {
+    .camiLogo {
+      margin-top: 0;
+    }
+  }
+
+  @media (width: 390px) and (height: 844px) {
+    .camiLogo {
+      margin-top: 0;
+    }
+  }
+
+  @media (width: 412px) and (height: 732px) {
+    .camiLogo {
+      margin-top: 0;
+    }
+  }
+
+  @media (width: 375px) and (height: 667px) {
+    .camiLogo {
+      margin-top:0;
+    }
+  }
+
+  @media (width: 375px) and (height: 812px) {
+    .camiLogo {
+      margin-top:0;
+    }
+  }
+
+  @media (width: 412px) and (height: 915px) {
+    .camiLogo {
+      margin-top:0;
+    }
+  }
+
+  @media (width: 414px) and (height: 896px) {
+    .camiLogo {
+      margin-top:0;
+    }
   }
 `;

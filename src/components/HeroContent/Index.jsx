@@ -42,12 +42,19 @@ export function HeroContent() {
             <br />
             <img className="img-fluid" src={DesignerAvatar} />
           </div>
+
           <div
-            className="col-xs-12 col-sm-12 col-md-4 col-lg-4  animate__animated animate__fadeIn"
-            style={{ display: "flex", justifyContent: "center", maxWidth:'100%'}}
+            style={{
+              animation: "fadeIn",
+              animationDuration: "2s",
+              animateDelay: "8s",
+            }}
+            className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
-            {/*Depois remover marginTop no mobile da logo */}
-            <img className="camiLogo" style={{width:'220px', height:'220px', marginTop:'300px'}} src={Logo} alt="" />
+            <HeroH1>
+              {/*Depois remover marginTop no mobile da logo */}
+              <img className="camiLogo" style={{}} src={Logo} alt="" />
+            </HeroH1>
           </div>
           <div
             style={{
