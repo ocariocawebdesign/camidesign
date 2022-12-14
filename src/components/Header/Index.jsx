@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <header
         className=""
-        style={{ background: "#000000e4", padding: "1rem", height: "160px" }}
+        style={{ background: "#000000e4", padding: "1rem", height: "120px" }}
       >
         <div className="container">
           <div className="row">

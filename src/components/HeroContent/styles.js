@@ -45,6 +45,19 @@ export const HeroH1 = styled.div`
   .camiLogo:hover {
   }
 
+  // Medium devices (tablets, 768px and up)
+  /*@media (min-width: 768px) {
+    .camiLogo {
+      margin-top: 0;
+    }
+  }*/
+
+  @media (max-width: 732px) {
+    .camiLogo {
+      margin-top: 0;
+    }
+  }
+
   @media (width: 360px) and (height: 740px) {
     .camiLogo {
       margin-top: 0;
@@ -65,31 +78,31 @@ export const HeroH1 = styled.div`
 
   @media (width: 412px) and (height: 732px) {
     .camiLogo {
-      margin-top: 0;
+      margin-top: -20%;
     }
   }
 
   @media (width: 375px) and (height: 667px) {
     .camiLogo {
-      margin-top:0;
+      margin-top: 0;
     }
   }
 
   @media (width: 375px) and (height: 812px) {
     .camiLogo {
-      margin-top:0;
+      margin-top: 0;
     }
   }
 
   @media (width: 412px) and (height: 915px) {
     .camiLogo {
-      margin-top:0;
+      margin-top: 0;
     }
   }
 
   @media (width: 414px) and (height: 896px) {
     .camiLogo {
-      margin-top:0;
+      margin-top: 0;
     }
   }
 `;
