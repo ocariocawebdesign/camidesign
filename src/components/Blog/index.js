@@ -24,10 +24,6 @@ export const BlogPosts = styled.div`
     text-align: left;
   }
 
-  .wp-block-video {
-    max-width: 100%;
-  }
-
   video {
     max-width: 100%;
   }

@@ -2,16 +2,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import parse from "html-react-parser";
 import { BlogPosts } from "./index";
-//import { MainBox } from "../components/BlogPosts/style";
 
 const url = "https://threeeyes.online/cami/wp-json/wp/v2/posts/";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
-  const [autor, setAutor] = useState("");
+  //const [autor, setAutor] = useState("");
   useEffect(() => {
     axios.get(`${url}`).then((result) => {
-      console.log(result.data);
+      //console.log(result.data);
       setPosts(result.data);
     }, []);
   });
@@ -36,7 +35,7 @@ export default function Blog() {
             width="56"
             height="56"
             fill="#333"
-            class="bi bi-calendar2-event"
+            className="bi bi-calendar2-event"
             viewBox="0 0 16 16"
           >
             <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />

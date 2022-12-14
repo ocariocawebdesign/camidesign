@@ -1,9 +1,9 @@
 import { DivProfile } from "./styles/styles";
 import "./styles/styles.css";
-import CynthiaVideo1 from "../assets/videos/linix.mp4";
-import CynthiaVideo2 from "../assets/videos/salesforce.mp4";
-import CynthiaVideo3 from "../assets/videos/sequoia.mp4";
-import CynthiaVideo4 from "../assets/videos/swissport.mp4";
+//import CynthiaVideo1 from "../assets/videos/linix.mp4";
+//import CynthiaVideo2 from "../assets/videos/salesforce.mp4";
+//import CynthiaVideo3 from "../assets/videos/sequoia.mp4";
+//import CynthiaVideo4 from "../assets/videos/swissport.mp4";
 import App from "../components/Slider/Index";
 
 export function CynthiaRocumback() {
@@ -30,7 +30,7 @@ export function CynthiaRocumback() {
                   width="22"
                   height="22"
                   fill="#333"
-                  class="bi bi-linkedin"
+                  className="bi bi-linkedin"
                   viewBox="0 0 16 16"
                   opacity="0.6"
                 >
