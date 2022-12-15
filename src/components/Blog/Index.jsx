@@ -45,23 +45,24 @@ export default function Blog() {
     <>
       <div className="container">
         <h1 className="newstitle">news</h1>
+        <div className="">
+          {posts.map((dados, index) => {
+            console.log(index);
 
-        {posts.map((dados) => {
-          //console.log(dados);
-
-          return (
-            <>
-              <div key={dados.id}>
-                <div className="blog-posts">
-                  <div className="box-content-posts">
-                    <h1>{dados.title.rendered}</h1>
-                    {parse(`${dados.content.rendered}`)}
+            return (
+              <>
+                <div key={index}>
+                  <div className="blog-posts">
+                    <div className="box-content-posts">
+                      <h1>{dados.title.rendered}</h1>
+                      {parse(`${dados.content.rendered}`)}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </>
-          );
-        })}
+              </>
+            );
+          })}
+        </div>
       </div>
       {/*<button
         onClick={() => {
