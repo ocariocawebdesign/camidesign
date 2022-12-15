@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-export const BlogPosts = styled.div`
+.blog-posts {
   /* display: grid;
   grid-template-columns: repeat(3, 1fr); //1fr 1fr 1fr 1fr
   gap: 10px;*/
@@ -11,31 +9,46 @@ export const BlogPosts = styled.div`
   margin-top: 15px;
   margin-bottom: 40px;
   padding: 1px;
+}
+.box-content-posts {
+  padding: 2rem;
+}
 
-  .box-content-posts {
-    padding: 2rem;
-  }
 
-  p {
-    font-size: 15px;
-    line-height: 1.4;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    text-align: left;
-  }
 
-  video {
-    max-width: 100%;
-  }
+h1.newstitle {
+  font-weight: "bolder";
+  text-align: "center";
+  line-height: "1.2";
+  letter-spacing: "-0.06em";
+  font-size: "5rem"!important;
+  color: "#333";
+  opacity: "1";
+}
 
-  @media (max-width: 992px) {
+p {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  text-align: left;
+}
+
+video {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .blog-posts {
     grid-template-columns: 1fr 1fr;
   }
+}
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
+  .blog-posts {
     grid-template-columns: 1fr;
   }
-`;
+}
 
 /*export const ButtonLoadMore = styled.button`
 background-color: var(--greenLight);
