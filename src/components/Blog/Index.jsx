@@ -90,16 +90,23 @@ export default function Blog() {
       });
   }
 
-  useEffect(() => {
-    getPosts();
-  }, []);
+  {
+    /*} useEffect(() => {
+    
+  }, []);*/
+  }
+  getPosts();
 
   const content = posts.map((post, i) => {
     //console.log(post);
     return (
       <div key={i}>
-        <h3>{post.slug}</h3>
-        {parse(`${post.content.rendered}`)}
+        <div className="container">
+          <div className="blogPosts">
+            <h3>{post.slug}</h3>
+            {parse(`${post.content.rendered}`)}
+          </div>
+        </div>
       </div>
     );
   });
