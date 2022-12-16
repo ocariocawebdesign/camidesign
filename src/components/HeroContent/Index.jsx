@@ -52,8 +52,10 @@ export function HeroContent() {
             className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
-              {/*Depois remover marginTop no mobile da logo */}
-              <img className="camiLogo" style={{}} src={Logo} alt="" />
+              <Link to="/news">
+                {/*Depois remover marginTop no mobile da logo */}
+                <img className="camiLogo" style={{}} src={Logo} alt="" />
+              </Link>
             </HeroH1>
           </div>
           <div

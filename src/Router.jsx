@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { CynthiaRocumback } from "./pages/CynthiaRocumback";
 import { CarlosAbreu } from "./pages/CarlosAbreu";
 import { Home } from "./pages/Home";
-import  Blog  from "../src/components/Blog/Index"
+import { News } from "./pages/News";
 
 export function Router() {
   return (
@@ -10,7 +10,7 @@ export function Router() {
       <Route path="/" element={<Home />} />
       <Route path="/cynthia-rocumback" element={<CynthiaRocumback />} />
       <Route path="/carlos-abreu" element={<CarlosAbreu />} />
-      <Route path="/blog" element={<Blog />} />
+      <Route path="/news" element={<News />} />
     </Routes>
   );
 }

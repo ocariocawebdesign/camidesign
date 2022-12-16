@@ -80,7 +80,7 @@ export default function Blog() {
       .get(`${url}`)
 
       .then((result) => {
-        console.log(result.data);
+        //console.log(result.data);
         setPosts(result.data);
         //Posts que são impressos na tela
         //setPosts(result.data.slice(0, 4));
@@ -95,7 +95,7 @@ export default function Blog() {
   }, []);
 
   const content = posts.map((post, i) => {
-    console.log(post);
+    //console.log(post);
     return (
       <div key={i}>
         <h3>{post.slug}</h3>
