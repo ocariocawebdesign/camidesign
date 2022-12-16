@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 import axios from "axios";
 import parse from "html-react-parser";
 import "./styles.css";
@@ -31,15 +31,6 @@ export default function Blog() {
     getPosts();
   }, []);
 
-  function showMorePosts() {
-    //setIsLoader(true);
-    /*if (totalPosts <= 2) {
-      SetShowPosts(posts.slice(0, 4));*/
-    //SetShowPosts(showPosts.slice(0, 2));
-    //console.log("Mais posts");
-    //setPosts(result.data.slice(0, 3));
-  }
-
   //const postsListSelection = posts.slice(0, 5);
   return (
     <>
@@ -51,13 +42,9 @@ export default function Blog() {
 
             return (
               <>
-                <div key={index}>
-                  <div className="blog-posts">
-                    <div className="box-content-posts">
-                      <h1>{dados.title.rendered}</h1>
-                      {parse(`${dados.content.rendered}`)}
-                    </div>
-                  </div>
+                <div key={posts.id}>
+                  {dados.title.rendered}
+                  {parse(`${dados.content.rendered}`)}
                 </div>
               </>
             );
@@ -74,7 +61,70 @@ export default function Blog() {
         }}
       >
         Mostrar mais
-      </button>*/}
+      </button>
     </>
   );
+}*/
+
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import parse from "html-react-parser";
+import "./styles.css";
+
+export default function Blog() {
+  const url = "https://threeeyes.online/cami/wp-json/wp/v2/posts/";
+  const [posts, setPosts] = useState([]);
+  function getPosts() {
+    axios
+      .get(`${url}`)
+
+      .then((result) => {
+        console.log(result.data);
+        setPosts(result.data);
+        //Posts que são impressos na tela
+        //setPosts(result.data.slice(0, 4));
+        //SetShowPosts(posts)
+        //SetTotalPosts(result.data.length);
+        //console.log(result.data.length);
+      });
+  }
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+  const content = posts.map((post, i) => {
+    console.log(post);
+    return (
+      <div key={i}>
+        <h3>{post.slug}</h3>
+        {parse(`${post.content.rendered}`)}
+      </div>
+    );
+  });
+
+  return <>{content}</>;
+
+  /*const posts = [
+    { id: 1, title: "Hello World", content: "Welcome to learning React!" },
+    {
+      id: 2,
+      title: "Installation",
+      content: "You can install React from npm.",
+    },
+  ];
+  const content = posts.map((post) => {
+    console.log(post);
+    return (
+      <div key={post.id}>
+        <h1>Teste</h1>
+        <h3>{post.title}</h3>
+        <p>{post.content}</p>
+      </div>
+    );
+  });
+
+  return <>{content}</>;
+*/
 }
