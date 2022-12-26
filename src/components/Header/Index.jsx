@@ -5,15 +5,12 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <header
-        className=""
-        style={{ background: "#000000e4", padding: "1rem", height: "120px" }}
-      >
+      <header className="" style={{ background: "#000000e4", padding: "1rem" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-6">
               <Link to="/">
-                <img className="logo img-fluid" src={Logo}  />
+                <img className="logo img-fluid" src={Logo} />
               </Link>
               <h1
                 style={{
@@ -21,9 +18,7 @@ export default function Header() {
                   fontWeight: "bolder",
                   fontSize: "1.5em",
                 }}
-              >
-               
-              </h1>
+              ></h1>
 
               <small
                 style={{
@@ -32,11 +27,9 @@ export default function Header() {
                   fontSize: "0.8em",
                   marginLeft: "0",
                 }}
-              >
-               
-              </small>
+              ></small>
             </div>
-            <div className="col-md-6 col-lg-6" style={{ padding: "3rem" }}>
+            <div className="col-md-6 col-lg-6" style={{}}>
               <div className="mainMenu">
                 <nav>
                   {/*<Link to="/">Home</Link>*

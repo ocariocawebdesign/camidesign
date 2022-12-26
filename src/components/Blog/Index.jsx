@@ -1,77 +1,10 @@
-/*import { useEffect, useState } from "react";
-import axios from "axios";
-import parse from "html-react-parser";
-import "./styles.css";
-
-//const url = "https://threeeyes.online/cami/wp-json/wp/v2/posts/";
-
-export default function Blog() {
-  const [posts, setPosts] = useState([]);
-  const [totalPosts, SetTotalPosts] = useState(0);
-  const [showPosts, SetShowPosts] = useState(0);
-
-  //const [autor, setAutor] = useState("");
-  const url = "https://threeeyes.online/cami/wp-json/wp/v2/posts";
-
-  function getPosts() {
-    axios
-      .get(`${url}`)
-
-      .then((result) => {
-        //console.log(result.data);
-        //Posts que são impressos na tela
-        setPosts(result.data.slice(0, 4));
-        //SetShowPosts(posts)
-        SetTotalPosts(result.data.length);
-        console.log(result.data.length);
-      });
-  }
-
-  useEffect(() => {
-    getPosts();
-  }, []);
-
-  //const postsListSelection = posts.slice(0, 5);
-  return (
-    <>
-      <div className="container">
-        <h1 className="newstitle">news</h1>
-        <div className="">
-          {posts.map((dados, index) => {
-            console.log(index);
-
-            return (
-              <>
-                <div key={posts.id}>
-                  {dados.title.rendered}
-                  {parse(`${dados.content.rendered}`)}
-                </div>
-              </>
-            );
-          })}
-        </div>
-      </div>
-      {/*<button
-        onClick={() => {
-          if (posts.slice(0, 2) !== totalPosts) {
-            console.log(`${posts}` + 1);
-          } else {
-            console.log("Igual");
-          }
-        }}
-      >
-        Mostrar mais
-      </button>
-    </>
-  );
-}*/
-
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import parse from "html-react-parser";
 import "./styles.css";
-
+//https://github.com/alexgarces/react-typeform-embed
+//https://developer.typeform.com/embed/react
 export default function Blog() {
   const url = "https://threeeyes.online/cami/wp-json/wp/v2/posts/";
   const [posts, setPosts] = useState([]);
@@ -80,13 +13,7 @@ export default function Blog() {
       .get(`${url}`)
 
       .then((result) => {
-        //console.log(result.data);
         setPosts(result.data);
-        //Posts que são impressos na tela
-        //setPosts(result.data.slice(0, 4));
-        //SetShowPosts(posts)
-        //SetTotalPosts(result.data.length);
-        //console.log(result.data.length);
       });
   }
 
@@ -97,14 +24,29 @@ export default function Blog() {
   const content = posts.map((post, i) => {
     //console.log(post);
     return (
-      <div key={i}>
-        <div className="container">
-          <div className="blogPosts box-content-posts ">
-            <h3>{post.slug}</h3>
-          {parse(`${post.content.rendered}`)}
+    
+        <div key={i}>
+          <div className="container">
+            <div className="blog-posts box-content-posts ">
+              <span
+                className="text-center"
+                style={{
+                  fontSize: "5rem",
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.06em",
+                  textTransform: "lowercase",
+                  color: "#333",
+                  opacity: "1",
+                  fontWeight: "bolder",
+                }}
+              >
+                {post.title.rendered}
+              </span>
+              {parse(`${post.content.rendered}`)}
+            </div>
           </div>
         </div>
-      </div>
+    
     );
   });
 

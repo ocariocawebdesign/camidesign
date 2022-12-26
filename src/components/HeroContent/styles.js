@@ -29,6 +29,7 @@ export const HeroH1 = styled.div`
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.01em;
+    text-align: center;
   }
 
   a {
