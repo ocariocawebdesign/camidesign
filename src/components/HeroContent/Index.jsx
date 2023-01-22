@@ -1,10 +1,11 @@
 import { HeroH1 } from "./styles";
-import Logo from "../../assets/img/logo.png";
+//import Logo from "../../assets/img/logo.png";
 import DesignerAvatar from "../../assets/img/cynthia.png";
 import DesignerAvatar2 from "../../assets/img/carlos.png";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { About } from "../About/Index";
+import LogoAnimation from "../../assets/videos/logo-animacao.mp4"
 //import { Loader } from "../Loader";
 
 export function HeroContent() {
@@ -52,10 +53,13 @@ export function HeroContent() {
             className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
-              <Link to="/news">
-                {/*Depois remover marginTop no mobile da logo */}
+              <video style={{}} autoPlay width="320" height="240">
+                <source src={LogoAnimation} type="video/mp4" />
+              </video>
+              {/* <Link to="/news">
+              
                 <img className="camiLogo" style={{}} src={Logo} alt="" />
-              </Link>
+          </Link>*/}
             </HeroH1>
           </div>
           <div

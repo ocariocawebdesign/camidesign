@@ -2,14 +2,7 @@
   text-transform: uppercase !important;
   font-weight: bold !important;
   /* background: #DB8D2E !important;*/
-  background-image: linear-gradient(
-    to right top,
-    #db8d2e,
-    #c0a83c,
-    #a4be5f,
-    #8bce8c,
-    #7ddbb8
-  ) !important;
+  background: #333 !important;
   border: none !important;
   border-radius: 8px !important;
   padding: 2rem;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroH1 = styled.div`
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: #333333;
   opacity: 1;
   font-weight: bolder;
@@ -46,16 +46,26 @@ export const HeroH1 = styled.div`
   .camiLogo:hover {
   }
 
+  video {
+    margin-top: 10rem;
+  }
+
   // Medium devices (tablets, 768px and up)
   /*@media (min-width: 768px) {
     .camiLogo {
       margin-top: 0;
     }
+    video {
+    margin-top: 0!important;
+  }
   }*/
 
   @media (max-width: 732px) {
     .camiLogo {
       margin-top: 0;
+    }
+    video {
+      margin-top: 0 !important;
     }
   }
 
@@ -63,11 +73,17 @@ export const HeroH1 = styled.div`
     .camiLogo {
       margin-top: 0;
     }
+    video {
+      margin-top: 0 !important;
+    }
   }
 
   @media (width: 360px) and (height: 640px) {
     .camiLogo {
       margin-top: 0;
+    }
+    video {
+      margin-top: 0 !important;
     }
   }
 
@@ -75,17 +91,26 @@ export const HeroH1 = styled.div`
     .camiLogo {
       margin-top: 0;
     }
+    video {
+      margin-top: 0 !important;
+    }
   }
 
   @media (width: 412px) and (height: 732px) {
     .camiLogo {
       margin-top: -20%;
     }
+    video {
+      margin-top: 0 !important;
+    }
   }
 
   @media (width: 375px) and (height: 667px) {
     .camiLogo {
       margin-top: 0;
+    }
+    video {
+      margin-top: 0 !important;
     }
   }
 
@@ -99,11 +124,17 @@ export const HeroH1 = styled.div`
     .camiLogo {
       margin-top: 0;
     }
+    video {
+      margin-top: 0 !important;
+    }
   }
 
   @media (width: 414px) and (height: 896px) {
     .camiLogo {
       margin-top: 0;
+    }
+    video {
+      margin-top: 0 !important;
     }
   }
 `;

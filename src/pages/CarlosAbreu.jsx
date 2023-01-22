@@ -1,9 +1,7 @@
 import { DivProfile } from "./styles/styles";
 import "./styles/styles.css";
-import CarlosImg1 from "../assets/img/carlos5.jpg";
-import CarlosImg2 from "../assets/img/carlos3.jpg";
-import CarlosImg3 from "../assets/img/carlos4.jpg";
-import CarlosImg4 from "../assets/img/carlos6.jpg";
+import UbuntuVsCode from "../assets/img/ubuntu.png";
+
 
 export function CarlosAbreu() {
   return (
@@ -36,7 +34,7 @@ export function CarlosAbreu() {
                 >
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
-                <svg  style={{marginLeft:'0.8rem'}}
+                <svg style={{ marginLeft: '0.8rem' }}
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
@@ -66,43 +64,43 @@ export function CarlosAbreu() {
                 JavaScript. I use some frameworks and libraries like Reactjs,
                 Gatsby and Bootstrap.
               </p>
+              <div className="">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5521967530653&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Desenvolvimento%20de%20sites..."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn btn-primary-mod-02 text-button-size swing">
+                    Contact
+                  </button>
+                </a>
+              </div>
             </DivProfile>
           </div>
-          <div className="col-md-6 col-lg-6">
-            
+          <div className="col-md-6 col-lg-6" style={{marginBottom:'3rem'}}>
+            <DivProfile className="mb-4" style={{ marginTop: '0'}}>
+              <img className="img-fluid" src={UbuntuVsCode} style={{marginBottom:'2rem'}} alt="Códigos no VSCode" />
+            </DivProfile>
           </div>
-          <div className="mt-2">
-            <a
-              href="https://api.whatsapp.com/send?phone=5521967530653&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Desenvolvimento%20de%20sites..."
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="btn btn-primary-mod-02 text-button-size swing">
-                Contact
-              </button>
-            </a>
-          </div>
+
         </div>
       </div>
 
-      <div className="container mt-4 mb-4">
+      {/*<div className="container mt-4 mb-4">
         <div className="row">
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CarlosImg1} />
+
           </div>
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CarlosImg2} />
           </div>
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CarlosImg3} />
           </div>
           <div className="col-md-3 col-lg-3">
-            <img className="img-fluid img-thumbnail" src={CarlosImg4} />
           </div>
           <div className="col-md-2 col-lg-2"></div>
           <div className="col-md-2 col-lg-2"></div>
-        </div>
-      </div>
+            </div>
+            </div>*/}
     </>
   );
 }
