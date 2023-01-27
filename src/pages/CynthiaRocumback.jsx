@@ -22,7 +22,7 @@ export function CynthiaRocumback() {
                 }}
               >
                 I'm a Motion Designer and I live in Rio de Janeiro, Brazil.
-                <br /> I'm in love with dogs
+                <br /> I'm in love dogs
               </p>
               <div className="" style={{ marginTop: "-1rem" }}>
                 <svg
@@ -56,12 +56,12 @@ export function CynthiaRocumback() {
               </a>
             </div>
           </div>
-
+          <br /> 
           <br />
         </div>
       </div>
 
-      <div className="container mb-4">
+      <div className="container mt-4 mb-4">
         <div className="row">
           <App />
           {/*<div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">

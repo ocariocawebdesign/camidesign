@@ -5,19 +5,45 @@ import DesignerAvatar2 from "../../assets/img/carlos.png";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { About } from "../About/Index";
-import LogoAnimation from "../../assets/videos/logo-animacao.mp4"
+import LogoAnimation from "../../assets/videos/logo-animacao.mp4";
 //import { Loader } from "../Loader";
 
 export function HeroContent() {
+  const [message, setMessage] = useState("");
+
+  let data = new Date();
+  let diaDaSemana = new Array(7);
+
+  diaDaSemana[0] = "Domingo";
+  diaDaSemana[1] = "Segunda";
+  diaDaSemana[2] = "Terça";
+  diaDaSemana[3] = "Quarta";
+  diaDaSemana[4] = "Quinta";
+  diaDaSemana[5] = "Sexta";
+  diaDaSemana[6] = "Sabado";
+  let dia = diaDaSemana[data.getDay()];
+  console.log(dia);
+
+
   useEffect(() => {
+   
+    if (dia === "Quinta") {
+      document.body.style.background = "rgba(44, 42, 44, 0.3)";
+      setTimeout(() => {
+        setMessage("Olá, mundo!");
+      }, 2000);
+    }
     //Dados carregados, esconta o loader
   }, []); //empty array as second argument.
 
+
   return (
     <>
-      <h1></h1>
+     
 
       <div className="container mb-4">
+      <h1>{message}</h1>  
+    
         <div className="row">
           <div
             style={{
@@ -44,16 +70,9 @@ export function HeroContent() {
             <img className="img-fluid" src={DesignerAvatar} />
           </div>
 
-          <div
-            style={{
-              animation: "fadeIn",
-              animationDuration: "2s",
-              animateDelay: "8s",
-            }}
-            className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
-          >
+          <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <HeroH1>
-              <video style={{}} autoPlay width="320" height="240">
+              <video style={{}} autoPlay muted width="320" height="240">
                 <source src={LogoAnimation} type="video/mp4" />
               </video>
               {/* <Link to="/news">

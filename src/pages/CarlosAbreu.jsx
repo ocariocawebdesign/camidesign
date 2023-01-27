@@ -1,8 +1,19 @@
 import { DivProfile } from "./styles/styles";
 import "./styles/styles.css";
 import UbuntuVsCode from "../assets/img/ubuntu.png";
+import SREO from "../assets/img/logoSreo.png";
+import FAB from "../assets/img/fabiolaLogo.png";
+import ONDAS from "../assets/img/logoOndas.png";
+import PRIMO from "../assets/img/primoCappoLogo.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
+//import "./styles.css";
 
+// import required modules
+import { Navigation } from "swiper";
 export function CarlosAbreu() {
   return (
     <>
@@ -34,7 +45,8 @@ export function CarlosAbreu() {
                 >
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
-                <svg style={{ marginLeft: '0.8rem' }}
+                <svg
+                  style={{ marginLeft: "0.8rem" }}
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
@@ -77,30 +89,71 @@ export function CarlosAbreu() {
               </div>
             </DivProfile>
           </div>
-          <div className="col-md-6 col-lg-6" style={{marginBottom:'3rem'}}>
-            <DivProfile className="mb-4" style={{ marginTop: '0'}}>
-              <img className="img-fluid" src={UbuntuVsCode} style={{marginBottom:'2rem'}} alt="Códigos no VSCode" />
+          <div className="col-md-6 col-lg-6" style={{ marginBottom: "" }}>
+            <DivProfile className="" style={{ marginTop: "0" }}>
+              <img
+                className="img-fluid"
+                src={UbuntuVsCode}
+                style={{ marginBottom: "0" }}
+                alt="Códigos no VSCode"
+              />
             </DivProfile>
           </div>
-
         </div>
       </div>
 
-      {/*<div className="container mt-4 mb-4">
-        <div className="row">
-          <div className="col-md-3 col-lg-3">
-
-          </div>
-          <div className="col-md-3 col-lg-3">
-          </div>
-          <div className="col-md-3 col-lg-3">
-          </div>
-          <div className="col-md-3 col-lg-3">
-          </div>
-          <div className="col-md-2 col-lg-2"></div>
-          <div className="col-md-2 col-lg-2"></div>
+      <div className="container">
+        <Swiper
+          navigation={true}
+          modules={[Navigation]}
+          slidesPerView={3}
+          spaceBetween={5}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="col-xs-12 col-sm-12 ">
+              <img
+                style={{ maxWidth: "60%" }}
+                className="img-fluid "
+                src={SREO}
+              />
             </div>
-            </div>*/}
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="col-xs-12 col-sm-12 ">
+              <img
+                style={{ maxWidth: "60%" }}
+                className="img-fluid "
+                src={FAB}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="col-xs-12 col-sm-12">
+              <img
+                style={{ maxWidth: "60%" }}
+                className="img-fluid "
+                src={ONDAS}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="col-xs-12 col-sm-12">
+              <img
+                style={{ maxWidth: "60%" }}
+                className="img-fluid "
+                src={PRIMO}
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <div className="row">
+          <div className="col-md-3 col-lg-3"></div>
+          <div className="col-md-3 col-lg-3"></div>
+          <div className="col-md-3 col-lg-3"></div>
+          <div className="col-md-3 col-lg-3"></div>
+        </div>
+      </div>
     </>
   );
 }

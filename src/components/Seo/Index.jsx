@@ -6,7 +6,7 @@ export function Seo({ title, description, name, type }) {
     <div>
       <Helmet>
         {/* Standard metadata tags */}
-        <title>Cami Design</title>{" "}
+        <title>CAMI STUDIO</title>{" "}
         <meta
           name="We are a team dedicated to the development of animations and websites for companies. We work animations, institutional sites, blogs seeking to meet the needs of our customers."
           content={description}

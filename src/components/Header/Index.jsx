@@ -1,4 +1,7 @@
 import Logo from "../../assets/img/Logo_Cami_Studio.png";
+import BRASIL from "../../assets/img/brasilBandeira.png";
+import EUA from "../../assets/img/euaBandeira.png";
+
 import "./styles.css";
 import { Link } from "react-router-dom";
 
@@ -29,7 +32,10 @@ export default function Header() {
                 }}
               ></small>
             </div>
-            <div className="col-md-6 col-lg-6" style={{}}>
+            <div className="col-md-6 col-lg-6" style={{display:'flex', justifyContent:'right'}}>
+              <img style={{marginRight:'2px'}}  src={BRASIL} alt="" width="60" />
+              <img style={{marginLeft:'2px'}} src={EUA} alt="" width="60" height="50" />
+
               <div className="mainMenu">
                 <nav>
                   {/*<Link to="/">Home</Link>*

@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+
+
+
 export default function Footer() {
   return (
     <footer
@@ -6,11 +10,13 @@ export default function Footer() {
         justifyContent: "center",
         background: "#1B1B1B",
         width: "100%",
-        padding:'2rem',
-        color:'#FAFAFA'
+        padding: '2rem',
+        color: '#FAFAFA',
+
       }}
     >
-      <p className="text-center">CAMI DESIGN</p>
+      <Link style={{ textDecoration: 'none', color: '#FFF' }} to="/"><p className="text-center text-uppercase">Cami Studio</p></Link>
+
     </footer>
   );
 }
