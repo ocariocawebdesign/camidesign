@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 import { About } from "../About/Index";
 import LogoAnimation from "../../assets/videos/logo-animacao.mp4";
 import { lazy } from "react";
+//import SamplePage from "../Translate/Index";
 //import { Loader } from "../Loader";
 
 export function HeroContent() {
@@ -66,7 +67,7 @@ export function HeroContent() {
                 </p>
               </Link>
             </HeroH1>
-
+           
             <br />
             <img className="img-fluid" src={DesignerAvatar} />
           </div>
