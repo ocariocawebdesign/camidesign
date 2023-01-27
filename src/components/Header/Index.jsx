@@ -32,9 +32,9 @@ export default function Header() {
                 }}
               ></small>
             </div>
-            <div className="col-md-6 col-lg-6" style={{display:'flex', justifyContent:'right'}}>
-              <img style={{marginRight:'2px'}}  src={BRASIL} alt="" width="60" />
-              <img style={{marginLeft:'2px'}} src={EUA} alt="" width="60" height="50" />
+            <div className="col-md-6 col-lg-6 mt-2" style={{display:'flex', justifyContent:'right'}}>
+              <img style={{marginRight:'2px'}}  src={BRASIL} alt="" width="30" height="21" />
+              <img style={{marginLeft:'2px'}} src={EUA} alt="" width="30" height="21" />
 
               <div className="mainMenu">
                 <nav>

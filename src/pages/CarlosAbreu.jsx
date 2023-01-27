@@ -1,7 +1,7 @@
 import { DivProfile } from "./styles/styles";
 import "./styles/styles.css";
 import UbuntuVsCode from "../assets/img/ubuntu.png";
-import SREO from "../assets/img/logoSreo.png";
+import SREO from "../assets/img/logoSREO.png";
 import FAB from "../assets/img/fabiolaLogo.png";
 import ONDAS from "../assets/img/logoOndas.png";
 import PRIMO from "../assets/img/primoCappoLogo.png";
@@ -102,56 +102,26 @@ export function CarlosAbreu() {
         </div>
       </div>
 
-      <div className="container">
-        <Swiper
-          navigation={true}
-          modules={[Navigation]}
-          slidesPerView={3}
-          spaceBetween={5}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="col-xs-12 col-sm-12 ">
-              <img
-                style={{ maxWidth: "60%" }}
-                className="img-fluid "
-                src={SREO}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="col-xs-12 col-sm-12 ">
-              <img
-                style={{ maxWidth: "60%" }}
-                className="img-fluid "
-                src={FAB}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="col-xs-12 col-sm-12">
-              <img
-                style={{ maxWidth: "60%" }}
-                className="img-fluid "
-                src={ONDAS}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="col-xs-12 col-sm-12">
-              <img
-                style={{ maxWidth: "60%" }}
-                className="img-fluid "
-                src={PRIMO}
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+      <div className="container mb-4">
+        <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 " style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <img style={{ maxWidth: "60%" }} className="img-fluid " src={SREO} />
+        </div>
+        <div className="col-xs-12 col-sm-12  col-md-3 col-lg-3"style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <img style={{ maxWidth: "60%" }} className="img-fluid " src={FAB} />
+        </div>
+        <div className="col-xs-12 col-sm-12  col-md-3 col-lg-3" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <img style={{ maxWidth: "30%" }} className="img-fluid " src={ONDAS} />
+        </div>
+        <div className="col-xs-12 col-sm-12  col-md-3 col-lg-3" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <img style={{ maxWidth: "30%" }} className="img-fluid " src={PRIMO} />
+        </div>
         <div className="row">
           <div className="col-md-3 col-lg-3"></div>
           <div className="col-md-3 col-lg-3"></div>
           <div className="col-md-3 col-lg-3"></div>
           <div className="col-md-3 col-lg-3"></div>
+        </div>
         </div>
       </div>
     </>
