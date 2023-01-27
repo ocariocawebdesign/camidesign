@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { About } from "../About/Index";
 import LogoAnimation from "../../assets/videos/logo-animacao.mp4";
+import { lazy } from "react";
 //import { Loader } from "../Loader";
 
 export function HeroContent() {
@@ -72,7 +73,7 @@ export function HeroContent() {
 
           <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <HeroH1>
-              <video style={{}} autoPlay muted width="320" height="240">
+              <video style={{}} autoPlay muted width="320" height="240" loading={lazy}>
                 <source src={LogoAnimation} type="video/mp4" />
               </video>
               {/* <Link to="/news">
