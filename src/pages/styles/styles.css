@@ -23,3 +23,12 @@
   -moz-box-shadow: 7px 3px 3px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 7px 3px 3px -4px rgba(0, 0, 0, 0.15);
 }
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+
+  color: #333!important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  
+  color: #333!important;
+}

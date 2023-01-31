@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-
+//https://medium.com/@saikrishna.pachala/convert-your-react-js-website-to-bilingual-379e410f0a41
 const SamplePage = () => {
     const googleTranslateElementInit = () => {
-        new window.google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'pt',autoDisplay: false, layout: window.google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element')};
+        new window.google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'pt'  ,autoDisplay: false, layout: window.google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element')};
         
         
         useEffect(() => {

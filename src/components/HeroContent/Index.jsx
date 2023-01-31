@@ -12,6 +12,11 @@ import { lazy } from "react";
 
 export function HeroContent() {
   const [message, setMessage] = useState("");
+  //Esses dados são estáticos não iram mudar o estado...
+  const [nomeCyntia, setNomeCynthia] = useState("");
+  //const[descricaoCynthia, decricaoCynthia] = useState("");
+  //const[nomeCarlos, setNomeCarlos] = useState("");
+  //const[descricaoCarlos, decricaoCarlos] = useState("");
 
   let data = new Date();
   let diaDaSemana = new Array(7);
@@ -26,26 +31,22 @@ export function HeroContent() {
   let dia = diaDaSemana[data.getDay()];
   console.log(dia);
 
-
   useEffect(() => {
-   
-    if (dia === "Quinta") {
-      document.body.style.background = "rgba(44, 42, 44, 0.3)";
+    if (dia === dia) {
+      document.body.style.background = "#FFF";
+      setNomeCynthia("Cynthia Rocumback");
       setTimeout(() => {
-        setMessage("Olá, mundo!");
+        //setMessage("Olá, mundo!");
       }, 2000);
     }
     //Dados carregados, esconta o loader
   }, []); //empty array as second argument.
 
-
   return (
     <>
-     
-
       <div className="container mb-4">
-      <h1>{message}</h1>  
-    
+        <h1>{message}</h1>
+
         <div className="row">
           <div
             style={{
@@ -56,25 +57,34 @@ export function HeroContent() {
             className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
-              <Link to="/cynthia-rocumback">
-                motion designer
-                <p>
-                  <strong>Cynthia Rocumback</strong> <br />
-                  <span style={{ color: "#979595" }}>
-                    Product designer specialising in UI design and design
-                    systems.
-                  </span>
-                </p>
-              </Link>
+              <div style={{ border: '1px solid  rgb(151, 149, 149)', borderRadius:'4px', padding:'0.8rem'}}>
+                <Link to="/cynthia-rocumback">
+                  motion designer
+                  <p>
+                    <strong>{nomeCyntia}</strong> <br />
+                    <span style={{ color: "#979595" }}>
+                      Product designer specialising in UI design and design
+                      systems.
+                    </span>
+                  </p>
+                </Link>
+              </div>
             </HeroH1>
-           
+
             <br />
             <img className="img-fluid" src={DesignerAvatar} />
           </div>
 
           <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <HeroH1>
-              <video style={{}} autoPlay muted width="320" height="240" loading={lazy}>
+              <video
+                style={{}}
+                autoPlay
+                muted
+                width="320"
+                height="240"
+                loading={lazy}
+              >
                 <source src={LogoAnimation} type="video/mp4" />
               </video>
               {/* <Link to="/news">
@@ -92,6 +102,7 @@ export function HeroContent() {
             className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
+            <div style={{ border: '1px solid  rgb(151, 149, 149)', borderRadius:'4px', padding:'0.8rem'}}>
               <Link to="/carlos-abreu">
                 frontend dev
                 <p>
@@ -102,6 +113,7 @@ export function HeroContent() {
                   </span>
                 </p>
               </Link>
+              </div>
             </HeroH1>
             <br />
             <img className="img-fluid" src={DesignerAvatar2} />
