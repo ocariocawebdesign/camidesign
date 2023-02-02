@@ -16,4 +16,12 @@ header {
   margin-left: 10px;
   font-size: 1.1em;
   font-weight: lighter;
+  
+}
+
+button{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 14px;
+
 }

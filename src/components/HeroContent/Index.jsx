@@ -1,52 +1,42 @@
 import { HeroH1 } from "./styles";
-//import Logo from "../../assets/img/logo.png";
 import DesignerAvatar from "../../assets/img/cynthia.png";
 import DesignerAvatar2 from "../../assets/img/carlos.png";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { About } from "../About/Index";
 import LogoAnimation from "../../assets/videos/logo-animacao.mp4";
-import { lazy } from "react";
-//import SamplePage from "../Translate/Index";
-//import { Loader } from "../Loader";
+import ButtonTranslator from "../ButtonTranslator/Index";
 
 export function HeroContent() {
-  const [message, setMessage] = useState("");
-  //Esses dados são estáticos não iram mudar o estado...
-  const [nomeCyntia, setNomeCynthia] = useState("");
-  //const[descricaoCynthia, decricaoCynthia] = useState("");
-  //const[nomeCarlos, setNomeCarlos] = useState("");
-  //const[descricaoCarlos, decricaoCarlos] = useState("");
+  const [dados, setDados] = useState({
+    descriptionCynthiaPt:
+      "Product designer specialising in UI design and design systems.",
+  });
 
-  let data = new Date();
-  let diaDaSemana = new Array(7);
-
-  diaDaSemana[0] = "Domingo";
-  diaDaSemana[1] = "Segunda";
-  diaDaSemana[2] = "Terça";
-  diaDaSemana[3] = "Quarta";
-  diaDaSemana[4] = "Quinta";
-  diaDaSemana[5] = "Sexta";
-  diaDaSemana[6] = "Sabado";
-  let dia = diaDaSemana[data.getDay()];
-  console.log(dia);
-
-  useEffect(() => {
-    if (dia === dia) {
-      document.body.style.background = "#FFF";
-      setNomeCynthia("Cynthia Rocumback");
-      setTimeout(() => {
-        //setMessage("Olá, mundo!");
-      }, 2000);
-    }
-    //Dados carregados, esconta o loader
-  }, []); //empty array as second argument.
-
+  function translate() {
+    console.log("translate");
+    alert("BEM VINDO A CAMI STUDIO");
+    return (
+      <>
+        <p>{dados.descriptionCynthiaPt}</p>
+      </>
+    );
+  }
   return (
     <>
+      {/*<div className="float-end mt-4" style={{ marginRight: "2rem" }}>*/}
+      <div>
+        <ButtonTranslator id="button-br" event={translate} text="PT" />
+        |
+        <ButtonTranslator
+          style={{}}
+          id="buttton-en"
+          event={translate}
+          text="EN"
+        />
+      </div>
+      {/*</div>*/}
       <div className="container mb-4">
-        <h1>{message}</h1>
-
         <div className="row">
           <div
             style={{
@@ -56,36 +46,39 @@ export function HeroContent() {
             }}
             className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
+            {/*Secão Cynthia*/}
             <HeroH1>
-              <div style={{ border: '1px solid  rgb(151, 149, 149)', borderRadius:'4px', padding:'0.8rem'}}>
-                <Link to="/cynthia-rocumback">
-                  motion designer
-                  <p>
-                    <strong>{nomeCyntia}</strong> <br />
-                    <span style={{ color: "#979595" }}>
-                      Product designer specialising in UI design and design
-                      systems.
-                    </span>
-                  </p>
-                </Link>
-              </div>
+              <Link to="/cynthia-rocumback">
+                motion designer
+                <p>
+                  <strong>Cynthia Rocumback</strong> <br />
+                </p>
+                <p id="cynthiaDescription" style={{ color: "#979595" }}>
+                  {/*} Product designer specialising in UI design and design
+                    systems.*/}
+                  {translate()}
+                </p>
+              </Link>
             </HeroH1>
 
             <br />
-            <img className="img-fluid" src={DesignerAvatar} />
+            <img
+              className="img-fluid"
+              src="https://threeeyes.online/cami/wp-content/uploads/2023/02/cynthia.png"
+            />
           </div>
+          {/*Secão Cynthia Final*/}
+
+          {/*Secão Animação Logo*/}
 
           <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <HeroH1>
-              <video
-                style={{}}
-                autoPlay
-                muted
-                width="320"
-                height="240"
-                loading={lazy}
-              >
-                <source src={LogoAnimation} type="video/mp4" />
+              <video autoPlay muted width="320" height="240">
+                <source
+                  style={{ opacity: "10" }}
+                  src={LogoAnimation}
+                  type="video/mp4"
+                />
               </video>
               {/* <Link to="/news">
               
@@ -93,6 +86,10 @@ export function HeroContent() {
           </Link>*/}
             </HeroH1>
           </div>
+
+          {/*Secão Animação Logo Final*/}
+
+          {/*Secão Carlos Abreu*/}
           <div
             style={{
               animation: "fadeIn",
@@ -102,21 +99,22 @@ export function HeroContent() {
             className="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate__animated animate__fadeIn"
           >
             <HeroH1>
-            <div style={{ border: '1px solid  rgb(151, 149, 149)', borderRadius:'4px', padding:'0.8rem'}}>
               <Link to="/carlos-abreu">
                 frontend dev
                 <p>
-                  <strong>Carlos Abreu</strong> <br />
-                  <span style={{ color: "#979595" }}>
-                    Front end developer who writes clean, elegant and efficient
-                    code.
-                  </span>
+                  <strong>Carlos Abreu</strong>
+                </p>
+                <p style={{ color: "#979595" }}>
+                  Front end developer who writes clean, elegant and efficient
+                  code.
                 </p>
               </Link>
-              </div>
             </HeroH1>
             <br />
-            <img className="img-fluid" src={DesignerAvatar2} />
+            <img
+              className="img-fluid"
+              src="https://threeeyes.online/cami/wp-content/uploads/2023/02/carlos.png"
+            />
           </div>
         </div>
         <About />

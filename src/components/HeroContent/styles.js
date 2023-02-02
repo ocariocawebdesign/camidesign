@@ -48,6 +48,7 @@ export const HeroH1 = styled.div`
 
   video {
     margin-top: 10rem;
+    opacity: 10;
   }
 
   // Medium devices (tablets, 768px and up)

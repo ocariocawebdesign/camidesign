@@ -6,8 +6,8 @@ import "animate.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { HeroContent } from "./components/HeroContent/Index";
-import { About } from "./components/About/Index";
+//import { HeroContent } from "./components/HeroContent/Index";
+//import { About } from "./components/About/Index";
 import { Helmet } from "react-helmet";
 
 function App() {

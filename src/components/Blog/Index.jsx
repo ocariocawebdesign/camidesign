@@ -14,6 +14,8 @@ export default function Blog() {
 
       .then((result) => {
         setPosts(result.data);
+        console.log(result.data);
+
       });
   }
 
@@ -22,7 +24,7 @@ export default function Blog() {
   }, []);
 
   const content = posts.map((post, i) => {
-    //console.log(post);
+    console.log(post);
     return (
     
         <div key={i}>
