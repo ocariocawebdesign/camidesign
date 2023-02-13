@@ -30,6 +30,7 @@ export const HeroH1 = styled.div`
     line-height: 1.2;
     letter-spacing: -0.01em;
     text-align: center;
+
   }
 
   a {
@@ -50,6 +51,28 @@ export const HeroH1 = styled.div`
     margin-top: 10rem;
     opacity: 10;
   }
+
+  .aboutH1 h1 {
+    font-size: 5rem;
+    color: #333333;
+    opacity: 1;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    
+  }
+    
+  
+   .about p {
+      font-size: 15px;
+      text-align: center;
+      padding: 0.5rem;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+      font-weight: 400;
+      color: #979595;
+    }
 
   // Medium devices (tablets, 768px and up)
   /*@media (min-width: 768px) {
@@ -81,7 +104,7 @@ export const HeroH1 = styled.div`
 
   @media (width: 360px) and (height: 640px) {
     .camiLogo {
-      margin-top: 0;
+      margin-top: 5rem;
     }
     video {
       margin-top: 0 !important;
@@ -138,4 +161,9 @@ export const HeroH1 = styled.div`
       margin-top: 0 !important;
     }
   }
+
+  
 `;
+
+
+

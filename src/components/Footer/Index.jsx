@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-
-
 export default function Footer() {
   return (
     <footer
@@ -10,13 +8,17 @@ export default function Footer() {
         justifyContent: "center",
         background: "#1B1B1B",
         width: "100%",
-        padding: '2rem',
-        color: '#FAFAFA',
-
+        height:'auto',
+        padding: "2rem",
+        color: "#FAFAFA",
+        position: "relative",
+        bottom: "0",
+        left: "0",
       }}
     >
-      <Link style={{ textDecoration: 'none', color: '#FFF' }} to="/"><p className="text-center text-uppercase">Cami Studio</p></Link>
-
+      <Link style={{ textDecoration: "none", color: "#FFF" }} to="/">
+        <p className="text-center text-uppercase">Cami Studio</p>
+      </Link>
     </footer>
   );
 }

@@ -89,14 +89,15 @@ export function CarlosAbreu() {
               </div>
             </DivProfile>
           </div>
-          <div className="col-md-6 col-lg-6" style={{ marginBottom: "" }}>
-            <DivProfile className="" style={{ marginTop: "0" }}>
-              <img
-                className="img-fluid"
-                src={UbuntuVsCode}
-                style={{ marginBottom: "0" }}
-                alt="Códigos no VSCode"
-              />
+          <div className="col-md-6 col-lg-6 mt-4" style={{ marginBottom: "" }}>
+            <DivProfile className="mt-4" style={{ marginTop: "0" }}>
+              <video autoPlay muted loop>
+                <source
+                  style={{ opacity: "10" }}
+                  src="https://threeeyes.online/cami/wp-content/uploads/2023/02/animacao-carlos.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </DivProfile>
           </div>
         </div>
@@ -104,24 +105,64 @@ export function CarlosAbreu() {
 
       <div className="container mb-4">
         <div className="row">
-        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 " style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-          <img style={{ maxWidth: "60%" }} className="img-fluid " src={SREO} />
-        </div>
-        <div className="col-xs-12 col-sm-12  col-md-3 col-lg-3"style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-          <img style={{ maxWidth: "60%" }} className="img-fluid " src={FAB} />
-        </div>
-        <div className="col-xs-12 col-sm-12  col-md-3 col-lg-3" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-          <img style={{ maxWidth: "30%" }} className="img-fluid " src={ONDAS} />
-        </div>
-        <div className="col-xs-12 col-sm-12  col-md-3 col-lg-3" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-          <img style={{ maxWidth: "30%" }} className="img-fluid " src={PRIMO} />
-        </div>
-        <div className="row">
-          <div className="col-md-3 col-lg-3"></div>
-          <div className="col-md-3 col-lg-3"></div>
-          <div className="col-md-3 col-lg-3"></div>
-          <div className="col-md-3 col-lg-3"></div>
-        </div>
+          <div
+            className="col-xs-12 col-sm-12 col-md-3 col-lg-3 "
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >{/*
+            <img
+              style={{ maxWidth: "60%" }}
+              className="img-fluid "
+              src={SREO}
+            />
+          </div>
+          <div
+            className="col-xs-12 col-sm-12  col-md-3 col-lg-3"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img style={{ maxWidth: "60%" }} className="img-fluid " src={FAB} />
+          </div>
+          <div
+            className="col-xs-12 col-sm-12  col-md-3 col-lg-3"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ maxWidth: "30%" }}
+              className="img-fluid "
+              src={ONDAS}
+            />
+          </div>
+          <div
+            className="col-xs-12 col-sm-12  col-md-3 col-lg-3"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ maxWidth: "30%" }}
+              className="img-fluid "
+              src={PRIMO}
+          />*/}
+          </div>
+          <div className="row">
+            <div className="col-md-3 col-lg-3"></div>
+            <div className="col-md-3 col-lg-3"></div>
+            <div className="col-md-3 col-lg-3"></div>
+            <div className="col-md-3 col-lg-3"></div>
+          </div>
         </div>
       </div>
     </>
