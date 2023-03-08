@@ -88,7 +88,7 @@ export function HeroContent() {
 
           <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <HeroH1>
-              <video autoPlay muted width="320" height="240">
+              <video autoPlay muted playsInline controls={false} width="320" height="240">
                 <source
                   style={{ opacity: "10" }}
                   src={LogoAnimation}
