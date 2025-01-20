@@ -25,36 +25,32 @@ export function HeroContent() {
     pt: "Somos uma equipa dedicada ao desenvolvimento de animações e websites para empresas. Trabalhamos animações, sites institucionais, blogs buscando atender as necessidades de nossos clientes.",
     en: "We are a team dedicated to the development of animations and websites for companies. We work animations, institutional sites, blogs seeking to meet the needs of our customers.",
   });
-  
 
   const [lang, setLang] = useState("pt");
 
-  
-
   return (
     <>
- 
-      {/*<div className="float-end mt-4" style={{ marginRight: "2rem" }}>*/}
-      <div className="mt-2" style={{ paddin: "0.5rem" }}>
-        <button
-          style={{ border: "none" }}
-          className="btn btn-ligth btn-sm"
-          onClick={() => setLang("pt")}
-          disabled={lang === "pt"}
-        >
-          PT
-        </button>
-        |
-        <button
-          style={{ border: "none" }}
-          className="btn btn-ligth btn-sm"
-          onClick={() => setLang("en")}
-          disabled={lang === "en"}
-        >
-          EN
-        </button>
+      <div className="float-end mt-4" style={{ marginRight: "2rem" }}>
+        <div className="mt-2" style={{ paddin: "0.5rem" }}>
+          <button
+            style={{ border: "none" }}
+            className="btn btn-ligth btn-sm"
+            onClick={() => setLang("pt")}
+            disabled={lang === "pt"}
+          >
+            PT
+          </button>
+          |
+          <button
+            style={{ border: "none" }}
+            className="btn btn-ligth btn-sm"
+            onClick={() => setLang("en")}
+            disabled={lang === "en"}
+          >
+            EN
+          </button>
+        </div>
       </div>
-
       <div className="container mb-4">
         <div className="row">
           <div
@@ -79,7 +75,8 @@ export function HeroContent() {
             <br />
             <img
               className="img-fluid"
-              src="https://threeeyes.online/cami/wp-content/uploads/2023/02/cynthia.png"
+              src={DesignerAvatar}
+              alt="Cynthia Rocumback - Motion Designer"
             />
           </div>
           {/*Secão Cynthia Final*/}
@@ -88,7 +85,14 @@ export function HeroContent() {
 
           <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <HeroH1>
-              <video autoPlay muted playsInline controls={false} width="320" height="240">
+              <video
+                autoPlay
+                muted
+                playsInline
+                controls={false}
+                width="320"
+                height="240"
+              >
                 <source
                   style={{ opacity: "10" }}
                   src={LogoAnimation}
@@ -127,7 +131,8 @@ export function HeroContent() {
             <br />
             <img
               className="img-fluid"
-              src="https://threeeyes.online/cami/wp-content/uploads/2023/02/carlos.png"
+              src={DesignerAvatar2}
+              alt="Carlos Abreu - Frontend Dev"
             />
           </div>
         </div>
@@ -143,7 +148,7 @@ export function HeroContent() {
               letterSpacing: "-0.06em",
             }}
           >
-         {textAbout?.[lang]}
+            {textAbout?.[lang]}
           </h1>
 
           <p
@@ -153,11 +158,10 @@ export function HeroContent() {
               textAlign: "center",
               padding: "0.5rem",
               letterSpacing: "0.1em",
-              fontWeight: "400"
-
+              fontWeight: "400",
             }}
           >
-           {textAboutDescription?.[lang]}
+            {textAboutDescription?.[lang]}
           </p>
           <br />
         </div>
